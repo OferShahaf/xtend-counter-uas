@@ -8,7 +8,7 @@ import {
   Kicker,
   GoldDivider,
   Tag,
-  HUDFrame,
+  TacticalPlaceholder,
 } from "@/components/ui";
 import {
   INTERCEPTOR_HEADLINE,
@@ -60,20 +60,11 @@ export function Interceptor() {
               variants={shouldReduce ? none : scaleIn}
               className="order-2 lg:order-1"
             >
-              <HUDFrame size="lg">
-                <div
-                  className="flex items-center justify-center"
-                  style={{
-                    aspectRatio: "16/9",
-                    background: "var(--color-surface-mid)",
-                    border: "1px solid var(--color-border-subtle)",
-                  }}
-                >
-                  <span className="font-mono text-xs text-dim tracking-widest uppercase">
-                    [ XTEND INTERCEPTOR — KINETIC DEFEAT ]
-                  </span>
-                </div>
-              </HUDFrame>
+              <TacticalPlaceholder
+                label="XTEND Interceptor"
+                sublabel="KINETIC DEFEAT"
+                aspectRatio="16/9"
+              />
             </motion.div>
 
             {/* ── RIGHT: text + highlights ── */}

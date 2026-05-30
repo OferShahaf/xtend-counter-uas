@@ -162,11 +162,11 @@ export function Hero() {
 
             {/* CTAs */}
             <motion.div variants={item} className="flex flex-wrap gap-4 pt-2">
-              <CTAButton href="#contact" variant="primary">
-                Request Demonstration
+              <CTAButton href="#ecosystem" variant="primary">
+                Explore the Ecosystem
               </CTAButton>
-              <CTAButton href="#download" variant="secondary">
-                Download Capability Brief
+              <CTAButton href="#systems" variant="secondary">
+                View Systems
               </CTAButton>
             </motion.div>
           </motion.div>

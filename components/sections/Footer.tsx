@@ -1,4 +1,4 @@
-import { GoldDivider, CTAButton } from "@/components/ui";
+import { GoldDivider } from "@/components/ui";
 
 const QUICK_LINKS: { label: string; href: string }[] = [
   { label: "Ecosystem", href: "#ecosystem" },
@@ -111,13 +111,12 @@ export function Footer() {
             </div>
 
             <div className="pt-2">
-              <CTAButton
+              <a
                 href="#contact"
-                variant="secondary"
-                className="px-5 py-2.5 text-[0.65rem]"
+                className="font-mono text-[0.7rem] tracking-[0.15em] uppercase text-gold hover:text-[var(--color-gold-bright)] transition-colors duration-200"
               >
-                Schedule a Briefing
-              </CTAButton>
+                Contact XTEND →
+              </a>
             </div>
           </div>
         </div>

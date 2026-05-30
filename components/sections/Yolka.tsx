@@ -7,7 +7,7 @@ import {
   Container,
   Kicker,
   GoldDivider,
-  HUDFrame,
+  TacticalPlaceholder,
 } from "@/components/ui";
 import {
   YOLKA_HEADLINE,
@@ -128,20 +128,11 @@ export function Yolka() {
               viewport={{ once: true, margin: "-60px" }}
               variants={shouldReduce ? none : scaleIn}
             >
-              <HUDFrame size="lg">
-                <div
-                  className="flex items-center justify-center"
-                  style={{
-                    aspectRatio: "16/9",
-                    background: "var(--color-surface-mid)",
-                    border: "1px solid var(--color-border-subtle)",
-                  }}
-                >
-                  <span className="font-mono text-xs text-dim tracking-widest uppercase">
-                    [ YOLKA — VEHICLE DEPLOYMENT ]
-                  </span>
-                </div>
-              </HUDFrame>
+              <TacticalPlaceholder
+                label="YOLKA — Vehicle-Deployed C-UAS"
+                sublabel="RAPID DEPLOY"
+                aspectRatio="16/9"
+              />
             </motion.div>
 
           </div>

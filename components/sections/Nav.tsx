@@ -141,10 +141,10 @@ export function Nav() {
             <div className="hidden md:block">
               <CTAButton
                 href="#contact"
-                variant="primary"
+                variant="secondary"
                 className="px-4 py-2 text-[0.65rem]"
               >
-                Request Demonstration
+                Contact XTEND
               </CTAButton>
             </div>
 
@@ -191,11 +191,11 @@ export function Nav() {
           <div className="pt-4">
             <CTAButton
               href="#contact"
-              variant="primary"
+              variant="secondary"
               className="w-full justify-center py-3 text-[0.65rem]"
               onClick={closeMobile}
             >
-              Request Demonstration
+              Contact XTEND
             </CTAButton>
           </div>
         </div>

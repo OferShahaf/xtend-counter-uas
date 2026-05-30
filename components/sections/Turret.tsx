@@ -8,7 +8,7 @@ import {
   Kicker,
   GoldDivider,
   Tag,
-  HUDFrame,
+  TacticalPlaceholder,
 } from "@/components/ui";
 import {
   TURRET_HEADLINE,
@@ -57,20 +57,11 @@ export function Turret() {
               variants={shouldReduce ? none : scaleIn}
               className="order-2 lg:order-1"
             >
-              <HUDFrame size="lg">
-                <div
-                  className="flex items-center justify-center"
-                  style={{
-                    aspectRatio: "16/9",
-                    background: "var(--color-surface-mid)",
-                    border: "1px solid var(--color-border-subtle)",
-                  }}
-                >
-                  <span className="font-mono text-xs text-dim tracking-widest uppercase">
-                    [ DEFENDAIR TURRET — 360° INTERCEPTION ]
-                  </span>
-                </div>
-              </HUDFrame>
+              <TacticalPlaceholder
+                label="DefendAir Turret — 360° Protection"
+                sublabel="FIXED SITE"
+                aspectRatio="16/9"
+              />
             </motion.div>
 
             {/* ── RIGHT: text + applications ── */}

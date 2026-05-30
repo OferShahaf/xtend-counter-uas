@@ -14,7 +14,12 @@
       "Bash(gh auth *)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(brew install *)",
+      "Bash(gh repo *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git commit -m 'Fix TypeScript: add gold: false to non-gold step items in as const tuples *)"
     ]
   }
 }

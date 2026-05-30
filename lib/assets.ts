@@ -21,17 +21,17 @@ export const ASSETS: Record<string, Asset> = {
   },
   combat_proven_1: {
     file: "/media/combat-proven-1.jpg",
-    alt: "XTEND system during live exercise",
+    alt: "XTEND — live operation",
     treatment: "duotone-gold",
     credit: "XTEND — exercise imagery, clearance required before public deploy",
-    isPlaceholder: false,
+    isPlaceholder: true,
   },
   combat_proven_2: {
     file: "/media/combat-proven-2.jpg",
-    alt: "Operators with XTEND Counter-UAS",
+    alt: "XTEND — field deployment",
     treatment: "duotone-gold",
     credit: "XTEND — exercise imagery, clearance required before public deploy",
-    isPlaceholder: false,
+    isPlaceholder: true,
   },
   scorpio_render: {
     file: "/media/scorpio-1000.jpg",

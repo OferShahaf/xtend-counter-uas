@@ -9,3 +9,4 @@ export { ScrollReveal } from "./ScrollReveal";
 export { MediaFrame } from "./MediaFrame";
 export { SpecGrid } from "./SpecGrid";
 export { StatCounter } from "./StatCounter";
+export { TacticalPlaceholder } from "./TacticalPlaceholder";

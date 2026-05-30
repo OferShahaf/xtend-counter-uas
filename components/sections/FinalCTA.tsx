@@ -5,8 +5,7 @@ import type { Variants } from "motion/react";
 import {
   Container,
   Kicker,
-  CTAButton,
-  HUDFrame,
+  GoldDivider,
 } from "@/components/ui";
 import {
   FINAL_CTA_HEADLINE,
@@ -16,101 +15,99 @@ import { fadeUp, staggerContainer, staggerItem } from "@/lib/motion";
 
 const none: Variants = {};
 
+const CONTACT_ITEMS = [
+  { label: "Web", value: "xtend.ai", href: "https://xtend.ai", external: true },
+  { label: "Email", value: "info@xtend.ai", href: "mailto:info@xtend.ai", external: false },
+] as const;
+
 export function FinalCTA() {
   const shouldReduce = useReducedMotion();
   const container = shouldReduce ? none : staggerContainer;
   const item = shouldReduce ? none : staggerItem;
 
   return (
-    <section
-      id="contact"
-      className="relative bg-black py-24 md:py-32 overflow-hidden"
-    >
-      {/* Warm radial glow */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 70% 50% at 50% 60%, rgba(201,162,74,0.07) 0%, rgba(0,0,0,0) 70%)",
-        }}
-        aria-hidden="true"
-      />
+    <>
+      <GoldDivider className="my-0" />
+      <section
+        id="contact"
+        className="relative bg-surface-deep py-24 md:py-32 overflow-hidden"
+      >
+        {/* Subtle radial glow */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 50% at 50% 60%, rgba(201,162,74,0.05) 0%, rgba(0,0,0,0) 70%)",
+          }}
+          aria-hidden="true"
+        />
 
-      <Container className="relative z-10 flex flex-col items-center text-center">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          variants={container}
-          className="flex flex-col items-center gap-8 max-w-3xl mx-auto"
-        >
-          <motion.div variants={item}>
-            <Kicker>BUILD YOUR CAPABILITY</Kicker>
-          </motion.div>
-
-          <motion.h2
-            variants={shouldReduce ? none : fadeUp}
-            className="display-heading font-display text-[var(--color-text-primary)] uppercase"
-            style={{ fontSize: "clamp(2rem, 5.5vw, 4.5rem)", lineHeight: 1.0 }}
+        <Container className="relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={container}
+            className="flex flex-col gap-10 max-w-2xl"
           >
-            {FINAL_CTA_HEADLINE}
-          </motion.h2>
+            <div className="flex flex-col gap-6">
+              <motion.div variants={item}>
+                <Kicker>CONTACT XTEND</Kicker>
+              </motion.div>
 
-          <motion.p
-            variants={item}
-            className="text-muted text-base md:text-lg leading-relaxed"
-            style={{ maxWidth: "52ch" }}
-          >
-            {FINAL_CTA_BODY}
-          </motion.p>
+              <motion.h2
+                variants={shouldReduce ? none : fadeUp}
+                className="display-heading font-display text-[var(--color-text-primary)] uppercase"
+                style={{ fontSize: "clamp(2rem, 5vw, 4rem)", lineHeight: 1.0 }}
+              >
+                {FINAL_CTA_HEADLINE}
+              </motion.h2>
 
-          <motion.div variants={item} className="w-full max-w-xl">
-            <HUDFrame size="lg" className="px-8 py-8">
-              <div className="flex flex-col gap-6">
-                <p className="font-mono text-[0.65rem] text-dim uppercase tracking-[0.2em] text-center">
-                  Request a Demonstration or Capability Brief
-                </p>
+              <motion.p
+                variants={item}
+                className="text-muted text-base md:text-lg leading-relaxed"
+                style={{ maxWidth: "52ch" }}
+              >
+                {FINAL_CTA_BODY}
+              </motion.p>
+            </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <CTAButton href="mailto:info@xtend.ai?subject=Demonstration Request" variant="primary">
-                    Request Demonstration
-                  </CTAButton>
-                  <CTAButton href="mailto:info@xtend.ai?subject=Capability Brief Request" variant="secondary">
-                    Download Brief
-                  </CTAButton>
-                </div>
+            {/* Contact directory */}
+            <motion.div
+              variants={item}
+              className="grid grid-cols-2 gap-px bg-[var(--color-border-subtle)]"
+              style={{ maxWidth: "28rem", borderRadius: "2px" }}
+            >
+              {CONTACT_ITEMS.map(({ label, value, href, external }) => (
+                <a
+                  key={label}
+                  href={href}
+                  {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="group bg-surface-deep px-6 py-5 flex flex-col gap-1.5 hover:bg-surface-mid transition-colors duration-200"
+                >
+                  <span className="font-mono text-[0.55rem] text-dim uppercase tracking-[0.2em]">
+                    {label}
+                  </span>
+                  <span className="font-mono text-sm text-gold group-hover:text-[var(--color-gold-bright)] transition-colors duration-200 tracking-wide">
+                    {value}
+                  </span>
+                </a>
+              ))}
+            </motion.div>
 
-                <div
-                  className="h-px"
-                  style={{ background: "var(--color-border-subtle)" }}
-                  aria-hidden="true"
-                />
-
-                <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
-                  {[
-                    { label: "Email", value: "info@xtend.ai", href: "mailto:info@xtend.ai" },
-                    { label: "Web", value: "xtend.ai", href: "https://xtend.ai" },
-                  ].map(({ label, value, href }) => (
-                    <div key={label} className="flex flex-col items-center gap-1">
-                      <span className="font-mono text-[0.55rem] text-dim uppercase tracking-[0.2em]">
-                        {label}
-                      </span>
-                      <a
-                        href={href}
-                        target={label === "Web" ? "_blank" : undefined}
-                        rel={label === "Web" ? "noopener noreferrer" : undefined}
-                        className="font-mono text-xs text-gold hover:text-[var(--color-gold-bright)] transition-colors duration-200 tracking-wide"
-                      >
-                        {value}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </HUDFrame>
+            {/* Export control note */}
+            <motion.p
+              variants={item}
+              className="font-mono text-[0.55rem] text-dim tracking-widest leading-relaxed"
+              style={{ maxWidth: "44ch" }}
+            >
+              Export-controlled technology. Contact XTEND for qualification,
+              procurement, and distribution terms.
+            </motion.p>
           </motion.div>
-        </motion.div>
-      </Container>
-    </section>
+        </Container>
+      </section>
+      <GoldDivider className="my-0" />
+    </>
   );
 }
