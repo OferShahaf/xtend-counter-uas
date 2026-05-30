@@ -25,9 +25,9 @@ import { staggerContainer, staggerItem, fadeUp, scaleIn } from "@/lib/motion";
 const none: Variants = {};
 
 const INTERCEPT_STEPS = [
-  { label: "ACQUIRE", sub: "Drone detection" },
-  { label: "LOCK", sub: "Targeting" },
-  { label: "LAUNCH", sub: "Net deployment" },
+  { label: "ACQUIRE", sub: "Drone detection", gold: false },
+  { label: "LOCK", sub: "Targeting", gold: false },
+  { label: "LAUNCH", sub: "Net deployment", gold: false },
   { label: "CAPTURE", sub: "Neutralized", gold: true },
 ] as const;
 

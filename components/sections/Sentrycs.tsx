@@ -21,9 +21,9 @@ import { staggerContainer, staggerItem, fadeUp, scaleIn } from "@/lib/motion";
 const none: Variants = {};
 
 const CYBER_STEPS = [
-  { label: "DETECT", sub: "Passive RF scanning", step: "01" },
-  { label: "IDENTIFY", sub: "Protocol analysis", step: "02" },
-  { label: "LOCATE", sub: "Pilot geolocation", step: "03" },
+  { label: "DETECT", sub: "Passive RF scanning", step: "01", gold: false },
+  { label: "IDENTIFY", sub: "Protocol analysis", step: "02", gold: false },
+  { label: "LOCATE", sub: "Pilot geolocation", step: "03", gold: false },
   { label: "MITIGATE", sub: "Controlled defeat", step: "04", gold: true },
 ] as const;
 
