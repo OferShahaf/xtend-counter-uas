@@ -50,7 +50,7 @@ const NODES = [
     x: 250,
     y: 260,
     label: "KINETIC",
-    sub: "Interceptor",
+    sub: "AI Fast Interceptor",
     color: "var(--color-gold)",
     borderColor: "var(--color-border-gold)",
     tagColor: "var(--color-gold-bright)",

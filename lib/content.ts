@@ -83,10 +83,16 @@ export const DEFENDAIR_SPECS = [
   { label: "Ready", value: "<3 s", verified: false },
 ];
 
-export const INTERCEPTOR_HEADLINE = "XTEND Interceptor";
-export const INTERCEPTOR_SUB = "Kinetic Defeat";
-export const INTERCEPTOR_BODY =
-  "Defeat hostile drones before they reach their objective. High-speed engagement, autonomous tracking, AI-assisted pursuit.";
+export const AI_INTERCEPTOR_HEADLINE = "AI Fast Interceptor";
+export const AI_INTERCEPTOR_SUB = "High-speed AI-assisted kinetic interception for hostile drone threats.";
+export const AI_INTERCEPTOR_BODY =
+  "A fast-response interceptor layer designed to close the gap between detection and defeat, engaging hostile UAVs before they reach the protected force or asset.";
+export const AI_INTERCEPTOR_HIGHLIGHTS = [
+  "AI-ASSISTED INTERCEPT",
+  "HIGH-SPEED RESPONSE",
+  "AUTONOMOUS PURSUIT",
+  "KINETIC DEFEAT LAYER",
+] as const;
 
 export const TURRET_HEADLINE = "DefendAir Turret";
 export const TURRET_SUB = "Persistent Infrastructure Protection.";
@@ -118,12 +124,12 @@ export const WHY_COMPARISON = [
 export const SCENARIOS = [
   { title: "Military Base", threat: "FPV attack drone", response: "SCORPIO 1000 + DefendAir", outcome: "Base perimeter secured" },
   { title: "Critical Infrastructure", threat: "Commercial ISR quad", response: "Sentrycs + Turret", outcome: "Asset protected, zero collateral" },
-  { title: "VIP Protection", threat: "Swarm attempt", response: "DefendAir Personal + Interceptor", outcome: "Threat neutralized at standoff" },
+  { title: "VIP Protection", threat: "Swarm attempt", response: "DefendAir Personal + AI Fast Interceptor", outcome: "Threat neutralized at standoff" },
   { title: "Urban Security", threat: "Fiber-optic FPV", response: "Sentrycs cyber defeat", outcome: "Pilot located, drone mitigated" },
   { title: "FOB", threat: "Recon drone", response: "SCORPIO 1000 intercept", outcome: "FOB perimeter maintained" },
   { title: "Border Security", threat: "Multi-drone incursion", response: "Layered ecosystem", outcome: "Complete area denial" },
   { title: "Convoy", threat: "FPV kamikaze", response: "DefendAir Personal", outcome: "Convoy protected in transit" },
-  { title: "Counter-FPV", threat: "High-speed FPV", response: "XTEND Interceptor", outcome: "Kinetic defeat at range" },
+  { title: "Counter-FPV", threat: "High-speed FPV", response: "AI Fast Interceptor", outcome: "Kinetic defeat at range" },
 ];
 
 export const FINAL_CTA_HEADLINE = "Build Your Layered Counter-UAS Capability.";

@@ -4,10 +4,10 @@ import {
   CombatProvenBand,
   ThreatChanged,
   Ecosystem,
+  AIFastInterceptor,
   Scorpio1000,
   DefendAir,
   Turret,
-  Interceptor,
   Sentrycs,
   WhyXtend,
   FinalCTA,
@@ -24,10 +24,10 @@ export default function Home() {
         <ThreatChanged />
         <Ecosystem />
         <div id="systems">
+          <AIFastInterceptor />
           <Scorpio1000 />
           <DefendAir />
           <Turret />
-          <Interceptor />
           <Sentrycs />
         </div>
         <WhyXtend />

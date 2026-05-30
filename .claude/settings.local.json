@@ -37,7 +37,8 @@
       "WebFetch(domain:www.globenewswire.com)",
       "WebFetch(domain:dronexl.co)",
       "Bash(curl -sL https://cdn.prod.website-files.com/66c486ebf79230becffddc73/688b3fc403525dd9a78ce6ad_Scorpio%201000.webp -o /Users/ofershahaf/Desktop/xtend-counter-uas/public/media/scorpio-catalog.webp)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(git commit *)"
     ]
   }
 }

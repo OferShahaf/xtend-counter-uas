@@ -94,19 +94,12 @@ export function Footer() {
               </p>
 
               <a
-                href="https://xtend.ai"
+                href="https://xtend.me"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-[0.72rem] tracking-[0.1em] text-muted hover:text-gold transition-colors duration-200"
               >
-                xtend.ai
-              </a>
-
-              <a
-                href="mailto:info@xtend.ai"
-                className="font-mono text-[0.72rem] tracking-[0.1em] text-muted hover:text-gold transition-colors duration-200"
-              >
-                info@xtend.ai
+                xtend.me
               </a>
             </div>
 

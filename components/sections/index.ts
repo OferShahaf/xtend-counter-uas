@@ -5,7 +5,7 @@ export { Ecosystem } from "./Ecosystem";
 export { Scorpio1000 } from "./Scorpio1000";
 export { DefendAir } from "./DefendAir";
 export { Turret } from "./Turret";
-export { Interceptor } from "./Interceptor";
+export { AIFastInterceptor } from "./AIFastInterceptor";
 export { Sentrycs } from "./Sentrycs";
 export { WhyXtend } from "./WhyXtend";
 export { FinalCTA } from "./FinalCTA";

@@ -26,20 +26,20 @@ export const ASSETS: Record<string, Asset> = {
     isPlaceholder: false,
   },
   scorpio_render: {
+    file: "/media/interceptor.webp",
+    alt: "SCORPIO 1000 X-NET drone with net-capture payload",
+    treatment: "dark-grade",
+    isPlaceholder: false,
+  },
+  ai_fast_interceptor: {
     file: "/media/scorpio-1000.webp",
-    alt: "SCORPIO 1000 X-NET counter-drone interceptor",
+    alt: "AI Fast Interceptor — high-speed kinetic defeat drone",
     treatment: "dark-grade",
     isPlaceholder: false,
   },
   defendair_personal: {
     file: "/media/defendair-personal-2.png",
     alt: "DefendAir Personal net launcher",
-    treatment: "raw",
-    isPlaceholder: false,
-  },
-  interceptor: {
-    file: "/media/interceptor.webp",
-    alt: "XTEND Interceptor — kinetic defeat drone",
     treatment: "raw",
     isPlaceholder: false,
   },
