@@ -26,9 +26,9 @@ export const ASSETS: Record<string, Asset> = {
     isPlaceholder: false,
   },
   scorpio_render: {
-    file: "/media/interceptor.webp",
-    alt: "SCORPIO 1000 X-NET drone with net-capture payload",
-    treatment: "dark-grade",
+    file: "/media/scorpio-xnet.png",
+    alt: "SCORPIO 1000 X-NET — net-capture counter-drone interceptor",
+    treatment: "raw",
     isPlaceholder: false,
   },
   ai_fast_interceptor: {
