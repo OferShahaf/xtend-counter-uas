@@ -32,7 +32,7 @@ export const ASSETS: Record<string, Asset> = {
     isPlaceholder: false,
   },
   ai_fast_interceptor: {
-    file: "/media/scorpio-1000.webp",
+    file: "/media/ai-fast-interceptor.png",
     alt: "AI Fast Interceptor — high-speed kinetic defeat drone",
     treatment: "dark-grade",
     isPlaceholder: false,

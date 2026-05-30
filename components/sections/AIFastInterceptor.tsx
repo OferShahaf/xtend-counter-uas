@@ -61,8 +61,8 @@ export function AIFastInterceptor() {
               <MediaFrame
                 asset={ASSETS.ai_fast_interceptor}
                 showHUD
-                aspectRatio="16/9"
-                objectFit="cover"
+                aspectRatio="1/1"
+                objectFit="contain"
               />
             </motion.div>
 
