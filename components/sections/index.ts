@@ -2,7 +2,6 @@ export { Hero } from "./Hero";
 export { CombatProvenBand } from "./CombatProvenBand";
 export { ThreatChanged } from "./ThreatChanged";
 export { Ecosystem } from "./Ecosystem";
-export { Yolka } from "./Yolka";
 export { Scorpio1000 } from "./Scorpio1000";
 export { DefendAir } from "./DefendAir";
 export { Turret } from "./Turret";

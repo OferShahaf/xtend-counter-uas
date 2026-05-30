@@ -4,7 +4,6 @@ import {
   CombatProvenBand,
   ThreatChanged,
   Ecosystem,
-  Yolka,
   Scorpio1000,
   DefendAir,
   Turret,
@@ -25,7 +24,6 @@ export default function Home() {
         <ThreatChanged />
         <Ecosystem />
         <div id="systems">
-          <Yolka />
           <Scorpio1000 />
           <DefendAir />
           <Turret />

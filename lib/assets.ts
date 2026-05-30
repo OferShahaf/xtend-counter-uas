@@ -37,12 +37,6 @@ export const ASSETS: Record<string, Asset> = {
     treatment: "raw",
     isPlaceholder: false,
   },
-  yolka: {
-    file: "/media/yolka.png",
-    alt: "YOLKA vehicle-deployed counter-UAS drone",
-    treatment: "raw",
-    isPlaceholder: false,
-  },
   interceptor: {
     file: "/media/interceptor.webp",
     alt: "XTEND Interceptor — kinetic defeat drone",

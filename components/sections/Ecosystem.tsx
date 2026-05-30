@@ -40,7 +40,7 @@ const NODES = [
     x: 420,
     y: 75,
     label: "NET CAPTURE",
-    sub: "YOLKA · X-NET · DefendAir",
+    sub: "X-NET · DefendAir · Interceptor",
     color: "var(--color-gold)",
     borderColor: "var(--color-border-gold)",
     tagColor: "var(--color-gold-bright)",
