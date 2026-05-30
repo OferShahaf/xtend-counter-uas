@@ -7,8 +7,9 @@ import {
   Container,
   Kicker,
   GoldDivider,
-  TacticalPlaceholder,
+  MediaFrame,
 } from "@/components/ui";
+import { ASSETS } from "@/lib/assets";
 import {
   YOLKA_HEADLINE,
   YOLKA_SUB,
@@ -128,10 +129,11 @@ export function Yolka() {
               viewport={{ once: true, margin: "-60px" }}
               variants={shouldReduce ? none : scaleIn}
             >
-              <TacticalPlaceholder
-                label="YOLKA — Vehicle-Deployed C-UAS"
-                sublabel="RAPID DEPLOY"
-                aspectRatio="16/9"
+              <MediaFrame
+                asset={ASSETS.yolka}
+                showHUD
+                aspectRatio="4/3"
+                objectFit="contain"
               />
             </motion.div>
 

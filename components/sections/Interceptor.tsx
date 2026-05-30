@@ -8,8 +8,9 @@ import {
   Kicker,
   GoldDivider,
   Tag,
-  TacticalPlaceholder,
+  MediaFrame,
 } from "@/components/ui";
+import { ASSETS } from "@/lib/assets";
 import {
   INTERCEPTOR_HEADLINE,
   INTERCEPTOR_SUB,
@@ -60,10 +61,11 @@ export function Interceptor() {
               variants={shouldReduce ? none : scaleIn}
               className="order-2 lg:order-1"
             >
-              <TacticalPlaceholder
-                label="XTEND Interceptor"
-                sublabel="KINETIC DEFEAT"
+              <MediaFrame
+                asset={ASSETS.interceptor}
+                showHUD
                 aspectRatio="16/9"
+                objectFit="cover"
               />
             </motion.div>
 

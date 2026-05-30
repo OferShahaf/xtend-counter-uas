@@ -8,12 +8,12 @@ interface MediaFrameProps {
   priority?: boolean;
   showHUD?: boolean;
   aspectRatio?: string;
+  objectFit?: "cover" | "contain";
 }
 
 function TacticalVisual({ alt }: { alt: string }) {
   return (
     <div className="absolute inset-0" style={{ background: "var(--color-surface-deep)" }}>
-      {/* Grid */}
       <div
         className="absolute inset-0"
         style={{
@@ -24,7 +24,6 @@ function TacticalVisual({ alt }: { alt: string }) {
           backgroundSize: "40px 40px",
         }}
       />
-      {/* Radial glow */}
       <div
         className="absolute inset-0"
         style={{
@@ -32,7 +31,6 @@ function TacticalVisual({ alt }: { alt: string }) {
             "radial-gradient(ellipse 55% 65% at 50% 50%, rgba(201,162,74,0.06) 0%, transparent 70%)",
         }}
       />
-      {/* Crosshair + corners */}
       <svg
         className="absolute inset-0 w-full h-full"
         viewBox="0 0 400 225"
@@ -44,12 +42,11 @@ function TacticalVisual({ alt }: { alt: string }) {
         <circle cx="200" cy="112" r="24" fill="none" stroke="rgba(201,162,74,0.1)"  strokeWidth="0.75" />
         <circle cx="200" cy="112" r="9"  fill="none" stroke="rgba(201,162,74,0.2)"  strokeWidth="0.5" />
         <circle cx="200" cy="112" r="2.5" fill="rgba(201,162,74,0.35)" />
-        <path d="M 22 22 L 22 38 M 22 22 L 38 22"   stroke="rgba(201,162,74,0.35)" strokeWidth="1" fill="none" />
-        <path d="M 378 22 L 378 38 M 378 22 L 362 22" stroke="rgba(201,162,74,0.35)" strokeWidth="1" fill="none" />
-        <path d="M 22 203 L 22 187 M 22 203 L 38 203"   stroke="rgba(201,162,74,0.35)" strokeWidth="1" fill="none" />
+        <path d="M 22 22 L 22 38 M 22 22 L 38 22"     stroke="rgba(201,162,74,0.35)" strokeWidth="1" fill="none" />
+        <path d="M 378 22 L 378 38 M 378 22 L 362 22"  stroke="rgba(201,162,74,0.35)" strokeWidth="1" fill="none" />
+        <path d="M 22 203 L 22 187 M 22 203 L 38 203"    stroke="rgba(201,162,74,0.35)" strokeWidth="1" fill="none" />
         <path d="M 378 203 L 378 187 M 378 203 L 362 203" stroke="rgba(201,162,74,0.35)" strokeWidth="1" fill="none" />
       </svg>
-      {/* Status */}
       <div className="absolute top-3 right-4 flex items-center gap-1.5">
         <span
           className="w-1.5 h-1.5 rounded-full"
@@ -57,7 +54,6 @@ function TacticalVisual({ alt }: { alt: string }) {
         />
         <span className="font-mono text-[0.5rem] text-dim uppercase tracking-[0.18em]">STANDBY</span>
       </div>
-      {/* Label */}
       <div
         className="absolute bottom-0 left-0 right-0 px-4 py-2.5"
         style={{ background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%)" }}
@@ -76,6 +72,7 @@ export function MediaFrame({
   priority = false,
   showHUD = false,
   aspectRatio = "16/9",
+  objectFit = "cover",
 }: MediaFrameProps) {
   const inner = asset.isPlaceholder ? (
     <TacticalVisual alt={asset.alt} />
@@ -85,13 +82,18 @@ export function MediaFrame({
       alt={asset.alt}
       fill
       priority={priority}
-      className="object-cover"
+      className={objectFit === "contain" ? "object-contain p-4" : "object-cover"}
       sizes="(max-width: 768px) 100vw, 50vw"
     />
   );
 
+  const bg = objectFit === "contain" ? "var(--color-surface-deep)" : "transparent";
+
   const content = (
-    <div className={`relative overflow-hidden ${className}`} style={{ aspectRatio }}>
+    <div
+      className={`relative overflow-hidden ${className}`}
+      style={{ aspectRatio, background: bg }}
+    >
       {inner}
     </div>
   );

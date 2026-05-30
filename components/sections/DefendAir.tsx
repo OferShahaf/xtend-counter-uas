@@ -145,6 +145,7 @@ export function DefendAir() {
                 asset={ASSETS.defendair_personal}
                 showHUD
                 aspectRatio="4/3"
+                objectFit="contain"
               />
             </motion.div>
           </div>

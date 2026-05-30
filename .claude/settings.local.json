@@ -19,7 +19,24 @@
       "Bash(gh repo *)",
       "Bash(git remote *)",
       "Bash(git push *)",
-      "Bash(git commit -m 'Fix TypeScript: add gold: false to non-gold step items in as const tuples *)"
+      "Bash(git commit -m 'Fix TypeScript: add gold: false to non-gold step items in as const tuples *)",
+      "WebSearch",
+      "WebFetch(domain:xtend.me)",
+      "WebFetch(domain:www.xtend.me)",
+      "Bash(curl -sL \"https://cdn.prod.website-files.com/66c338dc0b7091d0f18af0be/68e61b3ff43b55dc529bfe01_SCORPIO%201000%20-%20PIC%201.webp\" -o scorpio-1000.webp)",
+      "Bash(curl -sL \"https://cdn.prod.website-files.com/66c338dc0b7091d0f18af0be/68e61ba1969c75cdbac4d562_SCORPIO%201000%20-%20PIC%202.webp\" -o scorpio-1000-2.webp)",
+      "Bash(curl -sL \"https://cdn.prod.website-files.com/66c338dc0b7091d0f18af0be/6883392a56efa5f99a1f85da_Hero.webp\" -o hero-poster.webp)",
+      "Bash(curl -sL \"https://cdn.prod.website-files.com/66c486ebf79230becffddc73/6886267281d84aaf47db7990_Wolverine.webp\" -o interceptor.webp)",
+      "WebFetch(domain:parazero.com)",
+      "WebFetch(domain:sentrycs.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.defenseadvancement.com)",
+      "WebFetch(domain:www.all4shooters.com)",
+      "WebFetch(domain:www.unmannedsystemstechnology.com)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:www.globenewswire.com)",
+      "WebFetch(domain:dronexl.co)",
+      "Bash(curl -sL https://cdn.prod.website-files.com/66c486ebf79230becffddc73/688b3fc403525dd9a78ce6ad_Scorpio%201000.webp -o /Users/ofershahaf/Desktop/xtend-counter-uas/public/media/scorpio-catalog.webp)"
     ]
   }
 }

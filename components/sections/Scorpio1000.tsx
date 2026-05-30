@@ -158,6 +158,7 @@ export function Scorpio1000() {
                   asset={ASSETS.scorpio_render}
                   showHUD
                   aspectRatio="16/9"
+                  objectFit="cover"
                 />
               </motion.div>
 

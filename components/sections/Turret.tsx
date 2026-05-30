@@ -8,8 +8,9 @@ import {
   Kicker,
   GoldDivider,
   Tag,
-  TacticalPlaceholder,
+  MediaFrame,
 } from "@/components/ui";
+import { ASSETS } from "@/lib/assets";
 import {
   TURRET_HEADLINE,
   TURRET_SUB,
@@ -57,10 +58,11 @@ export function Turret() {
               variants={shouldReduce ? none : scaleIn}
               className="order-2 lg:order-1"
             >
-              <TacticalPlaceholder
-                label="DefendAir Turret — 360° Protection"
-                sublabel="FIXED SITE"
-                aspectRatio="16/9"
+              <MediaFrame
+                asset={ASSETS.defendair_turret}
+                showHUD
+                aspectRatio="4/3"
+                objectFit="contain"
               />
             </motion.div>
 

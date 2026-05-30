@@ -8,9 +8,10 @@ import {
   Kicker,
   GoldDivider,
   Tag,
-  TacticalPlaceholder,
+  MediaFrame,
   ScrollReveal,
 } from "@/components/ui";
+import { ASSETS } from "@/lib/assets";
 import {
   SENTRYCS_HEADLINE,
   SENTRYCS_SUB,
@@ -121,10 +122,11 @@ export function Sentrycs() {
                 viewport={{ once: true, margin: "-60px" }}
                 variants={shouldReduce ? none : scaleIn}
               >
-                <TacticalPlaceholder
-                  label="Sentrycs — RF Spectrum Analysis"
-                  sublabel="CYBER DEFEAT"
-                  aspectRatio="16/9"
+                <MediaFrame
+                  asset={ASSETS.sentrycs}
+                  showHUD
+                  aspectRatio="4/3"
+                  objectFit="contain"
                 />
               </motion.div>
 
