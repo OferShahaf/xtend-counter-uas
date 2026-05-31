@@ -27,7 +27,7 @@ export const ASSETS: Record<string, Asset> = {
   },
   scorpio_render: {
     file: "/media/scorpio-xnet.png",
-    alt: "SCORPIO 1000 X-NET — net-capture counter-drone interceptor",
+    alt: "SCORPIO 1000 with X-Net launcher — autonomous net-capture interceptor in flight",
     treatment: "raw",
     isPlaceholder: false,
   },
