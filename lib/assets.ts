@@ -51,7 +51,7 @@ export const ASSETS: Record<string, Asset> = {
   },
   sentrycs: {
     file: "/media/sentrycs-field2.jpg",
-    alt: "Sentrycs — deployed on rooftop for urban airspace protection",
+    alt: "Cyber defeat system deployed on rooftop for urban airspace protection",
     treatment: "dark-grade",
     isPlaceholder: false,
   },

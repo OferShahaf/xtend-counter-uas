@@ -6,7 +6,7 @@ export { Scorpio1000 } from "./Scorpio1000";
 export { DefendAir } from "./DefendAir";
 export { Turret } from "./Turret";
 export { AIFastInterceptor } from "./AIFastInterceptor";
-export { Sentrycs } from "./Sentrycs";
+export { CyberDefeat } from "./Sentrycs";
 export { WhyXtend } from "./WhyXtend";
 export { FinalCTA } from "./FinalCTA";
 export { Nav } from "./Nav";

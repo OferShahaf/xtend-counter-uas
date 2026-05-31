@@ -5,7 +5,7 @@ const QUICK_LINKS: { label: string; href: string }[] = [
   { label: "Systems", href: "#systems" },
   { label: "DefendAir Personal", href: "#defend-air-personal" },
   { label: "SCORPIO 1000", href: "#scorpio-1000" },
-  { label: "Sentrycs", href: "#sentrycs" },
+  { label: "Cyber Defeat", href: "#cyber-defeat" },
   { label: "Why XTEND", href: "#why-xtend" },
 ];
 

@@ -38,7 +38,11 @@
       "WebFetch(domain:dronexl.co)",
       "Bash(curl -sL https://cdn.prod.website-files.com/66c486ebf79230becffddc73/688b3fc403525dd9a78ce6ad_Scorpio%201000.webp -o /Users/ofershahaf/Desktop/xtend-counter-uas/public/media/scorpio-catalog.webp)",
       "Bash(git rm *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(curl -sL https://sentrycs.com/wp-content/uploads/2023/03/zoom_in_tripod_0100.jpg -o /Users/ofershahaf/Desktop/xtend-counter-uas/public/media/sentrycs-field.jpg)",
+      "Bash(curl -sL https://sentrycs.com/wp-content/uploads/2023/03/zoom_in_antenna_0100.jpg -o /Users/ofershahaf/Desktop/xtend-counter-uas/public/media/sentrycs-antenna.jpg)",
+      "Bash(curl -sL https://www.isra-tech.net/wp-content/uploads/2025/09/IMG_6236_IC-1067x800.jpg -o /Users/ofershahaf/Desktop/xtend-counter-uas/public/media/sentrycs-field2.jpg)",
+      "Bash(curl -sL https://www.isra-tech.net/wp-content/uploads/2025/09/IMG_6273_IC-1064x800.jpg -o /Users/ofershahaf/Desktop/xtend-counter-uas/public/media/sentrycs-field3.jpg)"
     ]
   }
 }

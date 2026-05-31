@@ -106,10 +106,10 @@ export const TURRET_APPS = [
   "Strategic assets",
 ];
 
-export const SENTRYCS_HEADLINE = "Sentrycs";
-export const SENTRYCS_SUB = "Cyber Defeat Before Kinetic Defeat.";
+export const SENTRYCS_HEADLINE = "Cyber Defeat Layer";
+export const SENTRYCS_SUB = "Defeat Before Kinetic Engagement.";
 export const SENTRYCS_BODY =
-  "Passive detection, pilot location, drone identification, protocol exploitation, controlled mitigation. Not every threat requires destruction — sometimes the smartest interception is invisible.";
+  "Passive RF detection, drone identification, pilot location and controlled mitigation — all without alerting the operator. Not every threat requires a kinetic response. Sometimes the most effective defeat is invisible.";
 
 export const WHY_HEADLINE = "Built For Modern Warfare.";
 export const WHY_COMPARISON = [
@@ -123,9 +123,9 @@ export const WHY_COMPARISON = [
 
 export const SCENARIOS = [
   { title: "Military Base", threat: "FPV attack drone", response: "SCORPIO 1000 + DefendAir", outcome: "Base perimeter secured" },
-  { title: "Critical Infrastructure", threat: "Commercial ISR quad", response: "Sentrycs + Turret", outcome: "Asset protected, zero collateral" },
+  { title: "Critical Infrastructure", threat: "Commercial ISR quad", response: "Cyber Defeat + Turret", outcome: "Asset protected, zero collateral" },
   { title: "VIP Protection", threat: "Swarm attempt", response: "DefendAir Personal + AI Fast Interceptor", outcome: "Threat neutralized at standoff" },
-  { title: "Urban Security", threat: "Fiber-optic FPV", response: "Sentrycs cyber defeat", outcome: "Pilot located, drone mitigated" },
+  { title: "Urban Security", threat: "Fiber-optic FPV", response: "Cyber Defeat layer", outcome: "Pilot located, drone mitigated" },
   { title: "FOB", threat: "Recon drone", response: "SCORPIO 1000 intercept", outcome: "FOB perimeter maintained" },
   { title: "Border Security", threat: "Multi-drone incursion", response: "Layered ecosystem", outcome: "Complete area denial" },
   { title: "Convoy", threat: "FPV kamikaze", response: "DefendAir Personal", outcome: "Convoy protected in transit" },

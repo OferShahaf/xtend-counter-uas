@@ -8,7 +8,7 @@ import {
   Scorpio1000,
   DefendAir,
   Turret,
-  Sentrycs,
+  CyberDefeat,
   WhyXtend,
   FinalCTA,
   Footer,
@@ -28,7 +28,7 @@ export default function Home() {
           <Scorpio1000 />
           <DefendAir />
           <Turret />
-          <Sentrycs />
+          <CyberDefeat />
         </div>
         <WhyXtend />
         <FinalCTA />

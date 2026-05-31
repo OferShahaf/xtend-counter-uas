@@ -30,7 +30,7 @@ const NODES = [
     x: 80,
     y: 75,
     label: "CYBER DEFEAT",
-    sub: "Sentrycs",
+    sub: "Cyber Defeat",
     color: "var(--color-gold)",
     borderColor: "var(--color-border-gold)",
     tagColor: "var(--color-gold-bright)",

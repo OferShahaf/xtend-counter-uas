@@ -28,7 +28,7 @@ const CYBER_STEPS = [
   { label: "MITIGATE", sub: "Controlled defeat", step: "04", gold: true },
 ] as const;
 
-export function Sentrycs() {
+export function CyberDefeat() {
   const shouldReduce = useReducedMotion();
   const container = shouldReduce ? none : staggerContainer;
   const item = shouldReduce ? none : staggerItem;
@@ -36,7 +36,7 @@ export function Sentrycs() {
   return (
     <>
       <GoldDivider className="my-0" />
-      <Section id="sentrycs" dark className="overflow-hidden">
+      <Section id="cyber-defeat" dark className="overflow-hidden">
         <Container>
           {/* ── Pre-heading kicker row ── */}
           <motion.div
@@ -47,7 +47,7 @@ export function Sentrycs() {
             className="flex flex-wrap items-center gap-3 mb-10"
           >
             <motion.div variants={item}>
-              <Kicker className="mb-0">SENTRYCS</Kicker>
+              <Kicker className="mb-0">CYBER DEFEAT LAYER</Kicker>
             </motion.div>
             <motion.div variants={item}>
               <Tag variant="gold">CYBER DEFEAT</Tag>
