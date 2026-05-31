@@ -126,7 +126,7 @@ export function Sentrycs() {
                   asset={ASSETS.sentrycs}
                   showHUD
                   aspectRatio="4/3"
-                  objectFit="contain"
+                  objectFit="cover"
                 />
               </motion.div>
 

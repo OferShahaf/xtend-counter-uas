@@ -50,9 +50,9 @@ export const ASSETS: Record<string, Asset> = {
     isPlaceholder: false,
   },
   sentrycs: {
-    file: "/media/sentrycs.jpg",
-    alt: "Sentrycs cyber defeat — C2 interface",
-    treatment: "raw",
+    file: "/media/sentrycs-field2.jpg",
+    alt: "Sentrycs — deployed on rooftop for urban airspace protection",
+    treatment: "dark-grade",
     isPlaceholder: false,
   },
 };
